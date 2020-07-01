@@ -1,0 +1,519 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><h4>New Purchase Order</h4></a>
+    <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarSupported
+    content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggle-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-itemactive">
+        </li>
+        <li class="nav-item">
+        </li>
+      </ul>
+    
+  
+  <form class="form-inline my-2 my-lg-o">
+  <button class="navbar-brand" class="btn btn-outline-primary my-2 my-sm-0"  routerLink="/login" href="">Purcahse Order</button>
+  </form>
+  </div>
+  </nav>
+  
+  
+  <div class="col-sm-12" >
+  <div class="row">
+  
+  <div class="col-sm-3">
+        <div class="form-group">
+        <tr>
+            <td>
+          <label><b>Invoice Type</b></label>
+           </td>
+           <td>
+          <label  style="color:#DC3545"><b>*GRN No</b></label>
+         </td>
+        </tr> 
+        <tr>
+            <td>
+          <select name="" id="" class="form-control">
+              <option value="">Regular Goods</option>
+              <option value="">Regular Services</option>
+              <option value="">Import of Goods</option>
+              <option value="">Import of Services</option>
+              <option value="">Import of Goods from SEZ</option>
+              <option value="">Import of Goods from SEZ</option>
+          </select>
+          </td>
+          <td>
+        <input type="text" class="form-control">
+         </td>
+       </tr>
+
+    </div>
+  </div>   
+  
+  <div class="col-sm-5">
+    <div class="form-group">
+      <tr>
+        <td>
+      <label><b>Received on Date</b></label>
+       </td>&nbsp;
+       <td>
+        <label style="color:#DC3545"><b>*Invoice No</b></label>
+         </td>&nbsp;
+         <td>
+            <label style="color:#DC3545"><b>*Invoice Date</b></label>
+             </td>
+      </tr>
+      <tr>
+        <td>
+      <input type="date" class="form-control">
+      </td>&nbsp;
+      <td>
+        <input type="date" class="form-control">
+        </td>&nbsp;
+        <td>
+            <input type="date" class="form-control">
+            </td>
+    </tr>
+    </div>
+  
+  </div>   
+  <div class="col-sm-4">
+    <div class="form-group">
+      <tr>
+        <td>
+      <label><b>Due Date</b></label>
+       </td>&nbsp;
+       <td>
+        <label><b>PO No</b></label>
+         </td>
+      </tr>
+      <tr>
+        <td>
+      <input type="text" class="form-control">
+      </td>&nbsp;
+      <td>
+        <input type="date" class="form-control">
+        </td>
+    </tr>
+    </div>
+  
+  </div> 
+ 
+ 
+  </div>
+  </div><!-- end-->
+  <hr>
+  <div class="col-sm-12">
+    <div class="row">
+    
+        <div class="col-sm-3">
+            <div class="form-group">
+           
+              <label  style="color:#DC3545"><b>*Vendor Name</b></label>
+              <select name="" id="" class="form-control">
+                  <option value="">Select</option>
+              </select>
+               
+            </div>
+          </div>  
+          <div class="col-sm-3">
+            <div class="form-group">
+              <label><b>Address</b></label>
+                <textarea name="" rows="2" cols="2" disabled class="form-control"></textarea>
+            </div>
+          </div>  
+          <div class="col-sm-3">
+            <div class="form-group">
+           
+              <label><b>*Source of Supply</b></label>
+              <select name="" id="" class="form-control">
+                <option value="">1-AndhraPradesh</option>
+                <option value="">2-Telangana</option>
+                <option value="">3-Tamilnadu</option>
+                <option value="">4-karnataka</option>
+                <option value="">5-Kerala</option>
+                <option value="">6-Panducherry</option>
+            </select>
+               
+            </div>
+          </div>  
+          <div class="col-sm-3">
+            <div class="form-group">
+           
+              <label><b>Profit Center</b></label>
+              <select name="" id="" class="form-control">
+                <option value="">Select</option>
+               
+            </select>
+               
+            </div>
+          </div> 
+
+        </div>
+    </div>   <!-- end-->
+ 
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-sm-2">
+                <div class="form-group">
+                  <select name="" id="" class="custom-select" >
+                    <option value="">--Not Selected--</option>
+                    <option value="">Capital Goods</option>
+                    <option value="">Ineligible</option>
+                    <option value="">Input Goods</option>
+                </select>
+                </div>
+              </div>
+              
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <tr>
+                    
+                    <td>
+                  <label>for itc(Input Tax Credit)</label>
+                   </td>&nbsp;
+                </tr>
+                </div>
+              
+              </div> 
+             
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <tr>
+                    
+                    <td>
+                 <input class="checkbox" type="checkbox">
+                   </td>&nbsp;
+                    <td>
+                        <label style="font-size:18px;" for="">Including Tax</label>
+                    </td>
+                </tr>
+                </div>
+              
+              </div> 
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <tr>
+                    <td>
+                 <input type="checkbox">
+                    <td>&nbsp;
+                        <label style="font-size:18px;"for="">Reverse Charge / Yes</label>
+                    </td>
+                </tr>
+                </div>
+             </div> 
+             
+             
+
+
+        </div>
+        </div>    
+  <hr>
+  
+  <div class="col-sm-12">
+    <div class="row">
+  <form [formGroup]="addmore">
+    <div>
+      <button  (click)="openModal('custom-modal-2')" class="navbar-brand" class="btn btn-outline-success my-2 my-sm-0"   href="">Create Service Master</button>
+
+  </div>
+  <jw-modal id="custom-modal-2"><!-- start-->
+    <h4>Create Service Master</h4>
+    <div class="col-sm-12">
+      <div class="row">
+      
+          <div class="col-sm-3">
+              <div class="form-group">
+             
+                <label  style="color:#DC3545"><b>*Product Type</b></label>
+                <select name="" id="product" (click)="selectProduct(product.value)" #product class="form-control">
+                    <option value="goods">Goods</option>
+                    <option value="service">Service</option>
+                </select>
+              </div>
+            </div>  
+          
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label><b>Category</b></label>
+                <select name="" id=""  class="form-control">
+                    <option value="goods">Raw Material</option>
+                    <option value="service">Semi Finished</option>
+                </select>
+              </div>
+            </div>  
+            <div class="col-sm-3">
+              <div class="form-group">
+             
+                <label><b>Sub Category</b></label>
+                <select name="" id="" class="form-control">
+                  <option value="">--Select--</option>
+                  <option value="">Warp</option>
+                  <option value="">Sample</option>
+                  <option value="">SS</option>
+                  <option value="">Finish</option>
+               
+              </select>
+                 
+              </div>
+            </div>  
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label><b>Code</b></label>
+               <input type="text" class="form-control">  
+              </div>
+            </div> 
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label style="color:#DC3545" ><b>Product Name</b></label>
+               <input type="text" class="form-control">  
+              </div>
+            </div> 
+            <div class="col-sm-3">
+              <div class="form-group">
+                <label style="color:#DC3545"><b>Unit</b></label>
+             
+              </div>
+            </div> 
+         <!---  <div *ngIf="product;then thenBlock;else elseBlock">
+            </div>
+            <ng-template #thenBlock>
+              <h1>hello</h1> 
+            
+              </ng-template>
+              <ng-template #elseBlock>
+                <h1>hai</h1> 
+              
+                </ng-template>-->
+          
+  
+          </div>
+      </div>   <!-- end-->
+      <button class="btn btn-success">Submit</button>&nbsp;
+   
+    <button class="btn btn-danger" (click)="closeModal('custom-modal-2');">Close</button>
+</jw-modal>
+    
+      <div formArrayName="itemRows">
+      <table class="table table-bordered">
+     <thead>
+     <tr  class="bg-primary text-white">
+       <th>S.No</th>
+       <th>Item Name</th>
+       <th>HSN Code</th>
+       <th>UOM</th>
+       <th>Qty</th>
+       <th>Rate</th>
+       <th>Discount Rs.</th>
+       <th>Tax</th>
+       <th>Amount</th>
+       <th>Delete</th>
+  
+   
+     </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let itemrow of addmore.controls.itemRows['controls'];  let i=index"  [formGroupName]="i">
+        <td><input type="hidden" formControlName="sno" value={{i+1}} class="form-control">{{i+1}}</td>
+        <td><input type="text" formControlName="item" class="form-control"></td>
+        <td><input type="text" formControlName="description" class="form-control"></td>
+        <td><input type="text" formControlName="uom" class="form-control"></td>
+        <td><input type="text" formControlName="quantity" class="form-control"></td>
+        <td><input type="text" formControlName="rate" class="form-control"></td>
+        <td><input type="text" formControlName="discount" class="form-control"></td>
+        <td><input type="text" formControlName="tax" class="form-control"></td>
+        <td><input type="text" formControlName="amount" class="form-control"></td>
+      <td> <button   (click)="deleteRow(i)" class="btn btn-danger">Delete</button></td>
+      <!-- *ngIf="addmore.controls.itemRows['controls'].length > 1" -->
+        
+      </tr>
+  
+    </tbody>
+   
+   </table> 
+   </div>
+   <tfoot>
+    <tr><td> <button type="button" (click)="addNewRow()" class="btn btn-primary">Add</button></td></tr>
+  </tfoot>
+  </form>
+  
+    </div>
+    </div>
+  
+  
+    <div class="col-sm-12">
+      <div class="row">
+      
+    <div class="col-sm-4">
+      <div class="form-group">
+      <tr>
+        <td><b>Remarks</b></td>&nbsp;
+        <td><textarea name=""   rows="2" cols="28" class="form-control"></textarea></td>
+      </tr>
+      <tr>
+        <td><b>File Upload</b></td>&nbsp;
+        <td><input type="file" class="form-control"></td>
+      </tr>
+    </div>   
+  </div>   
+
+    <div class="col-sm-4">
+      <div class="form-group">
+      
+      <div *ngIf="data;then thenBlock;else elseBlock">
+        </div>
+        <ng-template #thenBlock>
+          <button style="width:100%" class="navbar-brand" class="btn btn-outline-primary my-2 my-sm-0" (click)="clickData()"  href="">EWAY BILL</button>
+          </ng-template>
+          <ng-template #elseBlock>
+            <button (click)="clickData2()" style="width:100%" class="navbar-brand" class="btn btn-outline-danger my-2 my-sm-0" >close</button>
+           <div style="margin-top:4%"></div>
+            <tr>
+              <td><b>Transport Mode  </b></td>
+              <td>
+                <select name="" id="" class="form-control">
+                  <option value="">Road</option>
+                  <option value="">Rail</option>
+                  <option value="">Air</option>
+                  <option value="">Ship</option>
+
+
+                </select>
+              </td>
+            </tr>
+            
+            <tr>
+             <td>Transport Id</td>
+             <td><input type="text" class="form-control" ></td>
+           </tr>
+            <tr>
+             <td>Transport Name</td>
+             <td><input type="text" class="form-control" ></td>
+           </tr>
+           <tr>
+             <td>Distance</td>
+             <td><input type="text" class="form-control" ></td>
+           </tr>
+           <tr>
+            <td>Trans Doc No</td>
+            <td><input type="text" class="form-control" ></td>
+          </tr>
+          <tr>
+            <td>Doc Date</td>
+            <td><input type="date" class="form-control" ></td>
+          </tr><tr>
+            <td>Vehicle No</td>
+            <td><input type="text" class="form-control" ></td>
+          </tr>
+            </ng-template>
+
+    </div>  
+    </div>
+     
+    
+    <div class="col-sm-4">
+      <div class="form-group">
+     <tr>
+       <td><b>SubTotal</b></td>
+       <td><input type="text"class="form-control" disabled></td>
+     </tr>
+     
+     <tr>
+      <td>Discount</td>
+      <td><input type="text" class="form-control" disabled></td>
+    </tr>
+     <tr>
+      <td>Tax Amount</td>
+      <td><input type="text" class="form-control" disabled></td>
+    </tr>
+    <tr>
+      <td>Cess Total</td>
+      <td><input type="text" class="form-control" disabled></td>
+    </tr>
+    <tr>
+      <td>Before TDS Total</td>
+      <td><input type="text" class="form-control"></td>
+    </tr>
+    <tr>
+      <td style="color:rgb(79, 164, 243)"><b>TDS</b></td>
+    </tr>  
+    <tr>
+      <td>
+        <select name="" id="" class="form-control" style="width:70%;">
+          <option value="">Nil [0.00]</option>
+          <option value="">Dividend [10.00]</option>
+          <option value="">Professional Fees [10.00]</option>
+          <option value="">Commission Or Brokerage[0.00]</option>
+
+        </select>
+      </td>
+      <td><input type="text"class="form-control" ></td>
+
+    </tr>
+
+    <tr>
+      <td style="color:rgb(79, 164, 243)"><b>TCS</b></td>
+    </tr>  
+    <tr>
+      <td>
+        <select name="" id="" class="form-control" style="width:70%;">
+          <option value="">Select</option>
+          
+
+        </select>
+      </td>
+      <td><input type="text"class="form-control"></td>
+
+    </tr>
+
+    <tr>
+      <td>
+      <label class="container">Auto Round Off
+        <input type="checkbox" style="width:20%" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+    </td>
+      <td><input type="text" class="form-control"></td>
+    </tr>
+    <tr>
+      <td><b>Nett.Amount</b> &nbsp; (INR)</td>
+      <td><input type="text" class="form-control"></td>
+    </tr>
+    <tr>
+    </div>
+    </div>
+    
+    </div>
+    </div>   
+    
+    
+    <hr class="bg-primary">
+    <div class="col-sm-12">
+      <div class="row">
+        <div class="col-sm-5">
+        </div>
+        
+            <tr>
+              <td>
+            <button style="width:100%" class="navbar-brand" class="btn btn-success my-2 my-sm-0"   href="">Save</button>
+          </td>
+          <td>
+            <button style="width:100%" class="navbar-brand" class="btn btn-danger my-2 my-sm-0"   href="">Cancel</button>
+          </td> <td>
+            <button style="width:100%" class="navbar-brand" class="btn btn-secondary my-2 my-sm-0"   href="">Reset</button>
+          </td>
+          </tr>
+        
+      </div>
+    </div>
+    <hr class="bg-primary">
+
+    
+  
+      
+     
+  
+  

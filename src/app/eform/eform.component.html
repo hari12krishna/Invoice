@@ -1,0 +1,121 @@
+<!-- Container fluid  -->
+<div class="container-fluid">
+    <!-- Start Page Content -->
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2 class="text-center">Employee Form</h2>
+            <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2>{{success}}</h2>
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="fname">Firstname</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="fname" class="form-control" id="fname">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="uname">Lastname</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="uname" class="form-control" id="uname">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="empid">Employee Id</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="empid" class="form-control" id="empid">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="password">Gender</label>
+                            <div class="col-lg-8">
+                                <div class="custom-control custom-radio">
+                                    <input id="male" type="radio" class="custom-control-input" value="male"
+                                        name="gender" formControlName="gender">
+                                    <label class="custom-control-label" for="male">Male</label>
+                                </div>
+
+                                <div class="custom-control custom-radio">
+                                    <input id="female" type="radio" class="custom-control-input" value="female"
+                                        name="gender" formControlName="gender">
+                                    <label class="custom-control-label" for="female">Female</label>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="date">Date Of Birth</label>
+                            <div class="col-lg-8">
+                                <input type="date" formControlName="dob" class="form-control" id="dob">
+                            </div>
+                        </div>
+                    </div><!-- end lg of 6-->
+
+                    <div class="col-lg-6">
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="qualf">Qualification</label>
+                            <div class="col-lg-8">
+                                <select name="" class="form-control" formControlName="qualf">
+                                    <option value="btech">B.TECH</option>
+                                    <option value="mtech">M.TECH</option>
+                                    <option value="msc">M.S.C</option>
+                                    <option value="others">OTHERS</option>
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="lctc">Last C.T.C</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="lctc" class="form-control" id="lctc">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="ectc">Expectation C.T.C</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="ectc" class="form-control" id="ectc">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="pnumber">Phone Number</label>
+                            <div class="col-lg-8">
+                                <input type="text" formControlName="pnumber" class="form-control" id="pnumber">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-lg-2 col-form-label" for="address">Address</label>
+                            <div class="col-lg-8">
+                                <textarea type="text" formControlName="address" cols="2" rows="2" class="form-control"
+                                    id="address"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <button style="margin:auto;position:center;" type="submit" class="btn btn-success">Add
+                        Employee</button>
+
+
+
+
+
+
+
+
+                </div>
+            </form>
+
+        </div><!-- end row-->
+    </div>
+</div><!-- end container fluid-->

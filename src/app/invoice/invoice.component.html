@@ -1,0 +1,251 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"><h4>New Purchase Order</h4></a>
+  <button class="navbar-toggler" type="button" data-toggle="colapse" data-target="#navbarSupported
+  content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="toggle-navigation">
+  <span class="navbar-toggle-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-itemactive">
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+  
+
+<form class="form-inline my-2 my-lg-o">
+<button class="navbar-brand" class="btn btn-outline-primary my-2 my-sm-0"  routerLink="/login" href="">Purcahse Order</button>
+</form>
+</div>
+</nav>
+
+
+<div class="col-sm-12">
+<div class="row">
+
+<div class="col-sm-4">
+      <div class="form-group">
+        <label style="color:#DC3545"><b>Vendor Name</b></label>
+        <input type="text" class="form-control">
+      </div>
+</div>   
+
+<div class="col-sm-4">
+  <div class="form-group">
+ 
+    <label>Address Details</label>
+      <textarea type="text" rows="2" cols="2" disabled class="form-control"></textarea>
+  </div>
+</div>   
+
+<div class="col-sm-4">
+  <div class="form-group">
+    <tr>
+      <td>
+    <label>Quatation No</label>
+      </td>&nbsp;
+      <td>
+        <label>Date</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+      <input type="text" class="form-control">
+      </td>&nbsp;
+      <td>
+        <input type="date" class="form-control">
+        </td>
+    </tr>
+  </div>
+</div>   
+
+
+
+
+</div>
+</div>
+
+<div class="col-sm-12">
+  <div class="row">
+  
+<div class="col-sm-4">
+  <div class="form-group">
+    <tr>
+      <td>
+    <label style="color:#DC3545"><b>Po No</b></label>
+     </td>&nbsp;
+     <td>
+      <label style="color:#DC3545"><b>Date</b></label>
+       </td>
+    </tr>
+    <tr>
+      <td>
+    <input type="text" class="form-control">
+    </td>&nbsp;
+    <td>
+      <input type="date" class="form-control">
+      </td>
+  </tr>
+  </div>
+
+</div> 
+
+<div class="col-sm-4">
+  <div class="form-group">
+ 
+    <label>Mobile No</label>
+      <input type="text" class="form-control">
+  </div>
+</div>   
+
+<div class="col-sm-4">
+  <div class="form-group">
+    <tr>
+      <td>
+    <label style="margin-left:10px;">Payment Terms </label>
+      </td>&nbsp;
+      <td>
+        <label style="margin-left:25px;">Due Date</label>
+      </td>
+    </tr>
+    <tr>
+      <td>
+     <select style="margin-left:10px;" name="" id="" class="form-control">
+      <option value="">Due On Receipt</option>
+      <option value="">Net 15</option>
+      <option value="">Net 30</option>
+      <option value="">Net 45</option>
+      <option value="">Net 60</option>
+      <option value="">Custom</option>
+     </select>
+      </td>&nbsp;
+      <td>
+        <input type="date"  style="margin-left:25px;" class="form-control">
+        </td>
+    </tr>
+   
+  </div>
+</div>   
+
+<div class="col-sm-4">
+  <div class="form-group">
+  <tr>
+    <td>
+   <input type="checkbox">
+    </td>&nbsp;
+    <td>
+    <label>Including Tax</label>
+    </td>
+  </tr>  
+</div>
+</div>
+
+</div>
+</div>   
+
+
+<hr>
+
+<div class="col-sm-12">
+  <div class="row">
+<form [formGroup]="addmore">
+    <button  class="navbar-brand" class="btn btn-outline-secondary my-2 my-sm-0"  routerLink="/login" href="">Create Service Master</button>
+    <div formArrayName="itemRows">
+    <table class="table table-bordered" class="table table-strip">
+   <thead>
+   <tr  class="bg-primary text-white">
+     <th>S.No</th>
+     <th>Item</th>
+     <th>Description</th>
+     <th>UOM</th>
+     <th>Qty</th>
+     <th>Rate</th>
+     <th>Discount Rs.</th>
+     <th>Tax</th>
+     <th>Amount</th>
+     <th>Delete</th>
+
+ 
+   </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let itemrow of addmore.controls.itemRows['controls'];  let i=index"  [formGroupName]="i">
+      <td><input type="hidden" formControlName="sno" value={{i+1}} class="form-control">{{i+1}}</td>
+      <td><input type="text" formControlName="item" class="form-control"></td>
+      <td><input type="text" formControlName="description" class="form-control"></td>
+      <td><input type="text" formControlName="uom" class="form-control"></td>
+      <td><input type="text" formControlName="quantity" class="form-control"></td>
+      <td><input type="text" formControlName="rate" class="form-control"></td>
+      <td><input type="text" formControlName="discount" class="form-control"></td>
+      <td><input type="text" formControlName="tax" class="form-control"></td>
+      <td><input type="text" formControlName="amount" class="form-control"></td>
+    <td> <button   (click)="deleteRow(i)" class="btn btn-danger">Delete</button></td>
+    <!-- *ngIf="addmore.controls.itemRows['controls'].length > 1" -->
+      
+    </tr>
+
+  </tbody>
+ 
+ </table> 
+ </div>
+ <tfoot>
+  <tr><td> <button type="button" (click)="addNewRow()" class="btn btn-primary">Add</button></td></tr>
+</tfoot>
+</form>
+
+  </div>
+  </div>
+
+
+  <div class="col-sm-12">
+    <div class="row">
+    
+  <div class="col-sm-4">
+    
+  </div>   
+  <div class="col-sm-4">
+    
+  </div>  
+   
+  
+  <div class="col-sm-4">
+    <div class="form-group">
+   <tr>
+     <td><b>SubTotal</b></td>
+     <td><input type="text"class="form-control" disabled></td>
+   </tr>
+   
+   <tr>
+    <td>Discount</td>
+    <td><input type="text" class="form-control" disabled></td>
+  </tr>
+   <tr>
+    <td>Tax Amount</td>
+    <td><input type="text" class="form-control" disabled></td>
+  </tr>
+  <tr>
+    <td>Cess Total</td>
+    <td><input type="text" class="form-control" disabled></td>
+  </tr>
+  <tr>
+    <td>Round Off</td>
+    <td><input type="text" class="form-control"></td>
+  </tr>
+  <tr>
+    <td><b>Nett.Amount</b></td>
+    <td><input type="text"class="form-control" ></td>
+  </tr>
+  </div>
+  </div>
+  
+  </div>
+  </div>   
+  
+  
+  <hr>
+  
+
+    
+   
+
